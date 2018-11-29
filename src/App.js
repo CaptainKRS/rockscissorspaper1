@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import PlayerCard from './PlayerCard'
 
-class App extends Component {
-  render() {
+class Game extends Component {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-
-          <p>
-          Everyone luvs puppies
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="style">
+        <div>
+        <PlayerCard />
+        <PlayerCard />
+        </div>
+        <div className="winner">Put the winner here yessss!!!</div>
+        <button type="button">Play the Game</button>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default Game;
